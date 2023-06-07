@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <title>Survey</title>
+     <link rel="stylesheet" href="index.css">
+    </head>
+    
+ <body>
+<h1 id="title">Survey-form</h1>
+ <p id="description">Please fill out this form to help us understand your needs and preferences better.</p>
+ <form id="survey-form">
+    <fieldset>
+       <label id="name-label">Name:<input type="text" id="name" placeholder="Name" required /></label>
+       <label id="email-label">Email:<input type="email" id="email" placeholder="Email" required /></label>
+       <label id="number-label">Age:<input type="number" id="number" max="100" min="15" placeholder="Age" required /></label>
+   </fieldset>
+    <fieldset>
+    <label for="dropdown"> Which City are you from?:</label>
+      <select id="dropdown">
+        <option value="">Select a city</option>
+        <option value="city1">Kilifi</option>
+        <option value="city2">Kwale</option>
+         <option value="city2">Nairobi</option>
+          <option value="city2">Mombasa</option>
+      </select>
+      <label>
+      Would you like our Company to be your friend?
+      <label>Definatly<input type="radio" name='fovarite-item' value="surity" class="unset" /></label>
+       <label>May be<input type="radio" name='fovarite-item' value="possibility" class="unset" /></label>
+        <label>Not Sure<input type="radio" name='fovarite-item' value="certainity" class="unset" /></label>
+     </label>
+   <p>What is your fovarite item in our Company</p>
+   <label><input type="checkbox" value="laptop" class="unset" />Laptops</label>
+   <label><input type="checkbox" value="phones" class="unset" />Phones</label>
+   <label><input type="checkbox" value="televition" class="unset" />Televition Set</label>
+   <label><input type="checkbox" value="cloths" class="unset" />Cloths</label>
+   <label><input type="checkbox" value="services" class="unset" />Services</label>
+   <label><input type="checkbox" value="others" class="unset" />Others</label>
+</fieldset>
+<fieldset>
+   <label>Enter Your Comment<textarea rows="3" cols="80"></textarea></label>
+</fieldset>
+<input type="submit" id="submit" name="submin">
+   </form>
+</body>
+</html>
